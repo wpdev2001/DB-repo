@@ -1,0 +1,62 @@
+Category:
+---------
+
+1. createCategory : Post http://localhost:9090/categories
+{
+    "title": "appliances",
+    "description": "find all home appliances product here",
+    "coverImage": "appliances.png"
+}
+
+2. getCategory : Get http://localhost:9090/categories
+3. updateCategory
+4. deleteCategory : Delete http://localhost:9090/categories/08369b87-f5a2-4f8d-bd33-2e374a7fb832
+5. searchCategoryByKeyword
+6. uploadCategoryImage : Post http://localhost:9090/categories/image/8524e58f-fde9-4074-8642-75babb23e36e
+7. getCatImage : http://localhost:9090/categories/image/8524e58f-fde9-4074-8642-75babb23e36e
+
+
+User:
+-----
+
+1. createUser : Post http://localhost:9090/users
+{
+    "name": "test4",
+    "email": "test4@gmail.com",
+    "password": "test@4345",
+    "gender": "Male",
+    "about": "This is test4",
+    "imageName": "test4.png"
+}
+
+2. updateUser
+3. deleteUser
+4. getUser : http://localhost:9090/users
+5. getUserByEmail
+6. searchUser
+7. uploadImage
+8. serveImage
+
+
+Product:
+--------
+1. createProduct
+2. getProduct
+3. updateProduct
+4. deleteProduct
+5. searchProduct : http://localhost:9090/products/search/prod1
+6. productIsLive : http://localhost:9090/products/isLive
+7. uploadProductImage : http://localhost:9090/products/image/b723b682-1d0b-47f2-b16b-fcb42882aaea
+8. getProductImage : http://localhost:9090/products/image/b723b682-1d0b-47f2-b16b-fcb42882aaea
+9. createProductWithCategory : http://localhost:9090/categories/a1222b3f-6ad7-4594-be01-5fd93f971be6/products
+{
+    "productTitle": "titan",
+    "productDesc": "Find best titan watch here",
+    "price": 5000,
+    "quantity": "1",
+    "live": true,
+    "stock": true,
+    "discountedPrice": 100
+}
+10. updateCategoryOfProduct : http://localhost:9090/categories/a3fe1f84-9925-4063-94d3-8e4facb96a47/products/0f09347f-c51c-4b54-8f4f-8a9a3a439bfc
+11. getAllProductsByCategoryId : http://localhost:9090/categories/e0af757c-2d08-4950-a992-ee2e5316c5ec/products
